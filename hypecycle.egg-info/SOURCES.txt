@@ -1,0 +1,15 @@
+HypeCycle.py
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.py
+hypecycle/HypeCycle.py
+hypecycle/__init__.py
+hypecycle.egg-info/PKG-INFO
+hypecycle.egg-info/SOURCES.txt
+hypecycle.egg-info/dependency_links.txt
+hypecycle.egg-info/requires.txt
+hypecycle.egg-info/top_level.txt
+images/output_15_0.png
+images/output_16_0.png
+images/output_18_0.png
