@@ -163,7 +163,7 @@
     hc.visualize()
 
 
-.. image:: images/output_15_0.png
+.. image:: https://github.com/LemenChao/HypeCycle/blob/master/images/output_15_0.png
 
 ::
 
@@ -171,7 +171,7 @@
     x = np.linspace(0, 70, 5000)
     hc.visualize(x,"blue",8)
 
-.. image:: images/output_16_0.png
+.. image:: https://github.com/LemenChao/HypeCycle/blob/master/images/output_16_0.png
 
 4.5API-anotate
 ^^^^^^^^^^^^^^^
@@ -184,7 +184,7 @@
     hc.annotate(x,x_value = 35,text = "the slope",color="blue",rotation=20)
     hc.annotate(x,x_value = 45,text = "the Pleateau",color="red",rotation=15)
 
-.. image:: images/output_18_0.png
+.. image:: https://github.com/LemenChao/HypeCycle/blob/master/images/output_18_0.png
 
 5.Authors
 ----------
