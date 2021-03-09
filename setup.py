@@ -14,8 +14,8 @@ setup(
     packages=["hypecycle"],
     py_modules=["HypeCycle"],
     long_description_content_type=readme_file(),
-    url="https://github.com/LemenChao",
+    url="https://github.com",
     license = "BSD 3",
     install_requires=["numpy>=1.18","matplotlib>=3.3"],
-    classifiers=["Programming Language :: Python :: 3","License :: OSI Approved :: BSD 3"]
+    classifiers=["Programming Language :: Python :: 3"]
 )
