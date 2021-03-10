@@ -7,7 +7,7 @@ def readme_file():
 
 setup(
     name="hypecycle",
-    version="0.5",
+    version="0.5.2",
     author="Chaolemen Borjigin ,Sun Zhizhong ，zhang Chen",
     author_email="chaolemen@ruc.edu.cn",
     description="hypecycle is the fundamental package needed for creating, visualizing, and annotating Gartner Hype Cycle with Python",

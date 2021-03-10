@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: hypecycle
-Version: 0.5
+Version: 0.5.2
 Summary: hypecycle is the fundamental package needed for creating, visualizing, and annotating Gartner Hype Cycle with Python
 Home-page: https://github.com
 Author: Chaolemen Borjigin ,Sun Zhizhong ，zhang Chen
@@ -174,7 +174,7 @@ Description-Content-Type:
     hc.visualize()
 
 
-.. image:: images/output_15_0.png
+.. image:: https://raw.githubusercontent.com/LemenChao/HypeCycle/master/images/output_15_0.png
 
 ::
 
@@ -182,7 +182,7 @@ Description-Content-Type:
     x = np.linspace(0, 70, 5000)
     hc.visualize(x,"blue",8)
 
-.. image:: images/output_16_0.png
+.. image:: https://raw.githubusercontent.com/LemenChao/HypeCycle/master/images/output_16_0.png
 
 4.5API-anotate
 ^^^^^^^^^^^^^^^
@@ -195,7 +195,7 @@ Description-Content-Type:
     hc.annotate(x,x_value = 35,text = "the slope",color="blue",rotation=20)
     hc.annotate(x,x_value = 45,text = "the Pleateau",color="red",rotation=15)
 
-.. image:: images/output_18_0.png
+.. image:: https://raw.githubusercontent.com/LemenChao/HypeCycle/master/images/output_18_0.png
 
 5.Authors
 ----------
@@ -207,6 +207,4 @@ Description-Content-Type:
 
 6.Citation
 -----------
-
-*if you use hypecycle in a project that leads to publication, please acknowledge this by citing hypecycle.*
-
+*If hypecycle contributes to a project that leads to a scientific publication, please acknowledge this fact by citing the project.*

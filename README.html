@@ -364,7 +364,12 @@ ul.auto-toc {
 <h1 class="title"><strong>hypecycle</strong></h1>
 
 <p><em>Package Name: hypecycle</em></p>
-<p><em>hypecycle is the fundamental package needed for creating, visualizing, and annotating Gartner Hype Cycle with Python.</em></p>
+<p><em>hypecycle is a fundamental package for creating Gartner Hype Cycle with Python. Purpose Statement:</em></p>
+<ul class="simple">
+<li><em>to generate data that are Gartner Hype Cycle distributed</em></li>
+<li><em>to visualize Gartner Hype Cycle curves</em></li>
+<li><em>to add annotations to Gartner Hype Cycle curves</em></li>
+</ul>
 <div class="section" id="source-code">
 <h1>1.Source Code</h1>
 <div class="section" id="dependencies">
@@ -381,17 +386,17 @@ import matplotlib.pyplot as plt
 def create(*x,crest1=50,crest2=25,stp_crest1=0.8,stp_crest2=0.2,midPoint=15,var=10):
 
     '''
-    to create a HypeCycle Data
+    to create a Story HypeCycle
         x: Input data
+        crest1,crest2: Controlling the height of the first wave crest and the second wave crest respectively.
+        stp_crest1,stp_crest2: Representing steepness.
         midPoint: The location of the mean value mainly controls the location of the first wave crest.
-        var: Displays moves or penalties for midpoint
-        crest1,crest2:Used to control the height of the first wave crest and the second wave crest respectively.
-        stp_crest1,stp_crest2:represent steepness
+        var: Displaying moves or penalties for midpoint
         Recommended parameters:crest1=50,crest2=25,stp_crest1=0.8,stp_crest2=0.2,midPoint=15,var=10
-                 x = np.linspace(0, 50, 5000)
+        x = np.linspace(0, 50, 5000)
     '''
     x = x
-    #If the user fails to submit x, the package will create a default DataSet.
+    # If user doesn't submit submit x, it will create a default DataSet.
     if x==():
         x = np.linspace(0, 70, 5000)
     else:
@@ -410,10 +415,10 @@ def create(*x,crest1=50,crest2=25,stp_crest1=0.8,stp_crest2=0.2,midPoint=15,var=
 def visualize(*x, color=&quot;red&quot;, linewidth=3, linestyle=&quot;-&quot;):
 
     &quot;&quot;&quot;
-     to visualize the HypeCycle Data into HypeCycle Line
+     to visualize the HypeCycle Data into a HypeCycle Curve
     &quot;&quot;&quot;
     x = x
-    #If the user fails to submit x, the package will create a default DataSet.
+    # If user doesn't submit submit x, it will create a default DataSet.
     if x==():
         x = np.linspace(0, 70, 5000)
     else:
@@ -428,11 +433,11 @@ def visualize(*x, color=&quot;red&quot;, linewidth=3, linestyle=&quot;-&quot;):
 def annotate(*x, x_value = 20, text = &quot;None&quot;,color = &quot;red&quot;,fontproperties='FZShuTi', fontsize = 13, alpha = 0.8,rotation=3):
 
     &quot;&quot;&quot;
-     to annaotate the HypeCycle Line
+     to annaotate the HypeCycle Curve
     &quot;&quot;&quot;
 
     x = x
-    #If the user fails to submit x, the package will create a default DataSet
+    # If user doesn't submit submit x, it will create a default DataSet.
     if x==():
         x = np.linspace(0, 70, 5000)
     else:
@@ -456,13 +461,13 @@ def annotate(*x, x_value = 20, text = &quot;None&quot;,color = &quot;red&quot;,f
 <div class="section" id="installing">
 <h1>2.Installing</h1>
 <pre class="literal-block">
-pip install hypercycle
+pip install hyperycle
 </pre>
 </div>
 <div class="section" id="usage">
 <h1>3.Usage</h1>
 <pre class="literal-block">
-from hypecycle import HyperCycle
+from hypecycle import HypeCycle
 </pre>
 </div>
 <div class="section" id="examples">
@@ -470,7 +475,7 @@ from hypecycle import HyperCycle
 <div class="section" id="importing-hypecycle">
 <h2>4.1Importing hypecycle</h2>
 <pre class="literal-block">
-from hypecycle import HyperCycle as hc
+from hypecycle import HypeCycle as hc
 </pre>
 </div>
 <div class="section" id="testing-data">
@@ -488,7 +493,7 @@ array([0.00000000e+00, 1.00020004e-02, 2.00040008e-02, ...,
 <div class="section" id="api-create">
 <h2>4.3API-Create</h2>
 <pre class="literal-block">
-#Default
+# Default
 y = hc.create( )
 y
 </pre>
@@ -497,7 +502,7 @@ array([-2.48323716e+01, -2.48319021e+01, -2.48314312e+01, ...,
        -3.10218943e-03, -3.09351479e-03, -3.08486440e-03])
 </pre>
 <pre class="literal-block">
-#With parameters
+# With parameters
 y = hc.create(x)
 y
 </pre>
@@ -509,16 +514,16 @@ array([-24.83237162, -24.83203636, -24.83170041, ...,  -0.16798742,
 <div class="section" id="api-visualize">
 <h2>4.4API-visualize</h2>
 <pre class="literal-block">
-#Default diagram
+# Default diagram
 hc.visualize()
 </pre>
-<img alt="images/output_15_0.png" src="images/output_15_0.png" />
+<img alt="https://raw.githubusercontent.com/LemenChao/HypeCycle/master/images/output_15_0.png" src="https://raw.githubusercontent.com/LemenChao/HypeCycle/master/images/output_15_0.png" />
 <pre class="literal-block">
-#Custom chart
+# Custom chart
 x = np.linspace(0, 70, 5000)
-HC.visualize(x,&quot;blue&quot;,8)
+hc.visualize(x,&quot;blue&quot;,8)
 </pre>
-<img alt="images/output_16_0.png" src="images/output_16_0.png" />
+<img alt="https://raw.githubusercontent.com/LemenChao/HypeCycle/master/images/output_16_0.png" src="https://raw.githubusercontent.com/LemenChao/HypeCycle/master/images/output_16_0.png" />
 </div>
 <div class="section" id="api-anotate">
 <h2>4.5API-anotate</h2>
@@ -530,18 +535,18 @@ hc.annotate(x,x_value = 27,text = &quot;the trough&quot;,color=&quot;green&quot;
 hc.annotate(x,x_value = 35,text = &quot;the slope&quot;,color=&quot;blue&quot;,rotation=20)
 hc.annotate(x,x_value = 45,text = &quot;the Pleateau&quot;,color=&quot;red&quot;,rotation=15)
 </pre>
-<img alt="images/output_18_0.png" src="images/output_18_0.png" />
+<img alt="https://raw.githubusercontent.com/LemenChao/HypeCycle/master/images/output_18_0.png" src="https://raw.githubusercontent.com/LemenChao/HypeCycle/master/images/output_18_0.png" />
 </div>
 </div>
 <div class="section" id="authors">
 <h1>5.Authors</h1>
-<p><em>Creator ：Chaolemen Borjigin,Sun Zhizhong</em></p>
+<p><em>Creator ：Chaolemen Borjigin, Sun Zhizhong, Zhang Chen</em></p>
 <p><em>Contact： chaolemen&#64;ruc.edu.cn</em></p>
 <p><em>License：BSD 3</em></p>
 </div>
 <div class="section" id="citation">
 <h1>6.Citation</h1>
-<p><em>if you use hypercycle in a project that leads to publication, please acknowledge this by citing hypercycle.</em></p>
+<p><em>If hypecycle contributes to a project that leads to a scientific publication, please acknowledge this fact by citing the project.</em></p>
 </div>
 </div>
 </body>

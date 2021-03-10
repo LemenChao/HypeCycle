@@ -196,5 +196,4 @@
 
 6.Citation
 -----------
-
-*if you use hypecycle in a project that leads to publication, please acknowledge this by citing hypecycle.*
+*If hypecycle contributes to a project that leads to a scientific publication, please acknowledge this fact by citing the project.*
